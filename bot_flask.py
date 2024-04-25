@@ -7,8 +7,8 @@ from slack_sdk.errors import SlackApiError
 app = Flask(__name__)
 
 # Load environment variables or set them directly
-SLACK_TOKEN = os.getenv('SLACK_TOKEN') or "xoxb-5824702042788-7021940663892-c54XElKX8Uryzv0jPWcXpFfx"
-CHANNEL_ID_OR_NAME = os.getenv('CHANNEL_ID_OR_NAME') or "C0708UKAY7N"
+SLACK_TOKEN = os.getenv('SLACK_TOKEN')
+CHANNEL_ID_OR_NAME = "C0708UKAY7N"
 
 # Initialize WebClient
 client = WebClient(token=SLACK_TOKEN)
