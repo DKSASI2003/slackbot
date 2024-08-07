@@ -3,7 +3,6 @@ import time
 from flask import Flask, request,jsonify
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
-#This is a git demo
 app = Flask(__name__)
 
 # Load environment variables or set them directly
